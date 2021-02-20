@@ -22,11 +22,16 @@ function component() {
     
     element.appendChild(myIcon);
 
-    Data.daters.forEach(e => console.log(e.a));
-    Csv.forEach(e => console.log(e))
-    console.log(Csv)
-
     return element;
 }
 
+function dataLoading() {
+
+    Data.daters.forEach(e => console.log(e.a));
+    Csv.forEach(e => console.log(e))
+    console.log(Csv)
+}
+
 document.body.appendChild(component());
+
+dataLoading()

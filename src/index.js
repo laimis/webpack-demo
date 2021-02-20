@@ -6,6 +6,8 @@ import Icon from './icon.png';
 
 import Data from './data.json';
 
+import Csv from './data.csv';
+
 
 function component() {
     const element = document.createElement("div");
@@ -21,6 +23,8 @@ function component() {
     element.appendChild(myIcon);
 
     Data.daters.forEach(e => console.log(e.a));
+    Csv.forEach(e => console.log(e))
+    console.log(Csv)
 
     return element;
 }
